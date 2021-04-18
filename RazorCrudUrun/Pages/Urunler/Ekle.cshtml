@@ -1,0 +1,16 @@
+﻿@page
+@model RazorCrudUrun.Pages.Urunler.EkleModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <input asp-for="Urun.UrunAd" class="form-control mr-2" placeholder="Ad" />
+        <span asp-validation-for="Urun.UrunAd"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="Urun.BirimFiyat" class="form-control mr-2" placeholder="Birim Fiyat" />
+        <span asp-validation-for="Urun.BirimFiyat"></span>
+    </div>
+    <button class="btn btn-primary">Ekle</button>
+</form>
